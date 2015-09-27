@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(void) {
+	int x,y,a=0,b=1,c;
+	scanf("%d%d",&x,&y);
+	while(b<y)
+	 {
+	     c=a+b;
+	     a=b;
+	     b=c;
+	     if(c>=x && c<=y)
+	      {
+	          if(c%4==0)
+	           {
+	               printf("%d",c);
+	               break;
+	           }
+	      }
+	 }
+	return 0;
+}
