@@ -1,20 +1,34 @@
 #include <stdio.h>
-int main(void) {
-	int x,y,a=0,b=1,c;
-	scanf("%d%d",&x,&y);
-	while(b<y)
-	 {
-	     c=a+b;
-	     a=b;
-	     b=c;
-	     if(c>=x && c<=y)
-	      {
-	          if(c%4==0)
-	           {
-	               printf("%d",c);
-	               break;
-	           }
-	      }
-	 }
+int main(void)
+{
+   int  a = 0, b = 1, d,  x, y, c;
+   scanf("%d %d", &x, &y);
+    while(b<y)     
+      {
+         d = a + b;
+         a = b;
+         b = d;
+         if(d>x && d<=y)
+          {
+              if(d%4==0)
+               {
+                   c=1;
+                   break;
+               }
+             
+          }
+         else
+          {
+              c=0;
+          }
+      }
+    if(c==1)
+    {
+         printf("%d", d);
+    }
+    else{
+        printf("0");
+    }
+     
 	return 0;
 }
